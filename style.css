@@ -221,7 +221,7 @@ section{
 
 
 #landing button{
-    height: 3rem;
+    height: fit-content;
     padding: .5rem 2.5rem;
     font-size: medium;
     font-weight: 600;
@@ -242,10 +242,6 @@ section{
     flex-direction: row;
     column-gap: 1rem;
 }
-
-/* #landing .left{
-    padding: 3rem 0rem;
-} */
 
 #features{
     display: flex;
@@ -285,9 +281,10 @@ section{
 
 .when-items .bordered-item, .pricing-cards {
     box-shadow: none;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2.5rem 1rem;
     background-color: var(--card);
+    align-items: flex-start;
 }
 
 .when-items .bordered-item-no {
@@ -387,6 +384,7 @@ section{
 }
 
 .pricing{
+    max-width: 100%;
     background-color: var(--secondary) !important;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -506,4 +504,194 @@ footer,.nav-menu-holder {
 #logo-footer {
     width: 7rem;
 }
+
+.filter-section{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-section i{
+    font-size: larger;
+}
+
+.filter-section select{
+    height: fit-content;
+    max-height: fit-content;
+    border: none;
+    outline: none;
+    width: fit-content;
+    max-width: fit-content;
+    min-width: fit-content;
+    font-size: medium;
+    margin: 0;
+}
+
+.title-filter select{
+    border: none;
+    outline: none;
+    height: fit-content;
+    max-height: fit-content;
+    /* min-height: fit-content; */
+}
+
+.closer{
+    border-top: .1rem solid var(--text);
+    justify-content: space-between;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+@media screen and (max-width : 1024px) {
+
+    #mds-logo{
+        display: none;
+    }
+
+    .section-padding{
+        padding: .5rem 1.5rem;
+    }
+
+    .l-r-container{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    
+    .closer{
+        flex-direction: column;
+        padding: 2rem 0rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: .5rem;
+    }
+
+    .l-r-container .left,.l-r-container .right{
+        width: 100%;
+    }
+
+    #why-us{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #why-us, #when-us{
+        padding: .5rem 2rem;
+    }
+
+    .bordered-section,
+    .when-items {
+        grid-gap: 3rem;
+    }
+
+    .when-us-header{
+        padding: 0;
+        row-gap: 2rem;
+    }
+
+    .when-items{
+        padding: 0;
+        grid-gap: 2rem;
+    }
+
+    #why-us, #when-us{
+        padding: 3rem 1.5rem;
+    }
+
+    .wave_line{
+        display: none;
+    }
+
+    .contact-info-bar{
+        column-gap: .5rem;
+        justify-content: flex-start;
+        padding: .5rem 2rem;
+    }
+
+    .time-indicator i{
+        display: none;
+    }
+
+    .side-menu {
+        width: 20rem;
+    }
+    .presentation-box {
+        margin: 0rem 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        padding: 3rem 1rem;
+    }
+
+    .nav-body {
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        padding: 5rem 0rem;
+    }
+
+    #about-us{
+        font-size: 1.8rem;
+        text-align: start;
+    }
+
+    #why-us{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        min-width: 100%;
+        padding: 0;
+    }
+
+    .bordered-section,
+    .when-items {
+        grid-gap: 3rem;
+    }
+
+    .when-us-header{
+        padding: 0;
+        row-gap: 2rem;
+    }
+
+    .when-items{
+        padding: 0;
+        grid-gap: 2rem;
+    }
+
+    #why-us, #when-us{
+        padding: 3rem 1.5rem;
+    }
+
+    .duo-right{
+        padding: 0;
+    }
+
+    #contact-us iframe{
+        height: 15rem;
+    }
+
+    .pricing-cards{
+        padding: 0;
+    }
+
+    .when-us-header h1, .when-us-header p{
+        text-align: start;
+    }
+
+    section{
+        margin-top: 2rem !important;
+        /* padding-top: 5rem !important; */
+    }
+
+}
+
 
