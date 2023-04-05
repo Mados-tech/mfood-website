@@ -33,11 +33,11 @@ const MenuGrid = (locale, homePath) => {
         <div class="footer-item-links">
             <a href="${homePath}vision">${{
                 en:"Get in touch",
-                fr:"Entrer en contact",
+                fr:"Contactez-nous",
                 sw:"Wasiliana",
             }[locale]}</a>
             <a href="${homePath}but">${{
-                en:"Get in touch",
+                en:"Request a demo",
                 fr:"Demander une démo",
                 sw:"Omba onyesho",
             }[locale]}</a>
