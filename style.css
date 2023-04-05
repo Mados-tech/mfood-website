@@ -543,6 +543,15 @@ footer,.nav-menu-holder {
     align-items: center;
 }
 
+#privacy-policy, #termsAndC{
+    padding-bottom: 4rem;
+}
+
+#privacy-policy h1, #privacy-policy h2, #privacy-policy h3, #privacy-policy h4, #termsAndC h1, #termsAndC h2, #termsAndC h3, #termsAndC h4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width : 1024px) {
 
     #mds-logo{

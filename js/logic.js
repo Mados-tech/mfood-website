@@ -1,4 +1,16 @@
-import { NavBar, Footer, Title, LandingLeft, RunBusiness, MultiCurrencies, FoodAndMenu, PricingSection,AdvantagesSection } from './components.js';
+import { 
+    NavBar, 
+    Footer, 
+    Title, 
+    LandingLeft, 
+    RunBusiness, 
+    MultiCurrencies, 
+    FoodAndMenu, 
+    PricingSection,
+    AdvantagesSection, 
+    PrivacyPolicy,
+    TermsAndConditions, 
+} from './components.js';
 
 const homePath = localStorage.getItem('home') ?? '/';
 
@@ -33,6 +45,8 @@ function insertTemplates({ locale = 'fr', payload = {} }) {
     innerHTML('.advantages-section', AdvantagesSection(locale, homePath));
     innerHTML('#title', Title(locale, homePath));
     innerHTML('#footer', Footer(locale, homePath));
+    innerHTML('#privacy-policy', PrivacyPolicy(locale, homePath));
+    innerHTML('#termsAndC', TermsAndConditions(locale, homePath));
     selectListener({
         key: "lng-changer", onChange: (value) => {
             insertTemplates({ locale: String(value), payload: defaultPayload });
